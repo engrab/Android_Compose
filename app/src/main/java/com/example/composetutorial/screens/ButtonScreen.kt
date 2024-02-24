@@ -1,14 +1,37 @@
 package com.example.composetutorial.screens
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
-@Preview
+
+@Preview(showSystemUi = true)
+@Composable
+fun ButtonsPreview() {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.SpaceEvenly
+
+    ) {
+        FilledButtonExample()
+        ElevatedButtonExample()
+        FilledTonalButtonExample()
+        OutLineButtonExample()
+        TextButtonExample()
+
+    }
+}
+
 @Composable
 fun FilledButtonExample() {
     Button(onClick = { /*TODO*/ }) {
@@ -16,7 +39,6 @@ fun FilledButtonExample() {
     }
 }
 
-@Preview
 @Composable
 fun FilledTonalButtonExample() {
     FilledTonalButton(onClick = { /*TODO*/ }) {
@@ -24,7 +46,6 @@ fun FilledTonalButtonExample() {
     }
 }
 
-@Preview
 @Composable
 fun OutLineButtonExample() {
     OutlinedButton(onClick = { /*TODO*/ }) {
@@ -32,7 +53,6 @@ fun OutLineButtonExample() {
     }
 }
 
-@Preview
 @Composable
 fun ElevatedButtonExample() {
     androidx.compose.material3.ElevatedButton(onClick = { /*TODO*/ }) {
@@ -40,7 +60,6 @@ fun ElevatedButtonExample() {
     }
 }
 
-@Preview
 @Composable
 fun TextButtonExample() {
     TextButton(onClick = { /*TODO*/ }) {
