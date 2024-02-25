@@ -24,6 +24,14 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun CardScreenExample() {
 
+    /*elevation: Adds a shadow to the component that makes it appear elevated above the background.
+    colors: Uses the CardColors type to set the default color of both the container and any children.
+    enabled: If you pass false for this parameter, the card appears as disabled and does not respond to user input.
+    onClick: Ordinarily, a Card does not accept click events. As such, the primary overload you would like to note is that which defines an onClick parameter. You should use this overload if you would like your implementation of Card to respond to presses from the user.
+    The following example demonstrates how you might use these parameters, as well as other common parameters such as shape and modifier.
+    Limitations
+    Cards don't come with inherent scroll or dismiss actions, but can integrate into composables offering these features. For example, to implement swipe to dismiss on a card, integrate it with the SwipeToDismiss composable. To integrate with scroll, use scroll modifiers such as verticalScroll. See the Scroll documentation for more information.
+    */
     OutlinedCard(
         modifier = Modifier
             .fillMaxSize()
