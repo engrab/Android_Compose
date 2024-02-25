@@ -35,6 +35,22 @@ import com.example.composetutorial.R
 @Composable
 fun DialogExample() {
 
+    /*Alert dialog
+            The AlertDialog composable provides a convenient API for creating a Material Design themed dialog. AlertDialog has specific parameters for handling particular elements of the dialog. Among them are the following:
+
+    title: The text that appears along the top of the dialog.
+    text: The text that appears centered within the dialog.
+    icon: The graphic that appears at the top of the dialog.
+    onDismissRequest: The function called when the user dismisses the dialog, such as by tapping outside of it.
+    dismissButton: A composable that serves as the dismiss button.
+    confirmButton: A composable that serves as the confirm button.
+
+    Dialog composable
+            Dialog is a basic composable that doesn't provide any styling or predefined slots for content. It is a relatively straightforward container that you should populate with a container such as Card. The following are some of the key parameters of a dialog:
+
+    onDismissRequest: The lambda called when the user closes the dialog.
+    properties: An instance of DialogProperties that provides some additional scope for customization.
+*/
     val dialgValue = remember {
         mutableStateOf(false)
     }
