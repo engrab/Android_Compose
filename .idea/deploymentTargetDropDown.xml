@@ -2,10 +2,10 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="NavigationDrawerExample">
+      <entry key="ChipsExample">
         <State />
       </entry>
-      <entry key="ProgressIndicatorExample">
+      <entry key="NavigationDrawerExample">
         <State />
       </entry>
       <entry key="ShowBottomSheet">
