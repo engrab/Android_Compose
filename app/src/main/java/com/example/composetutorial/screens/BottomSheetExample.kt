@@ -43,7 +43,10 @@ fun ShowBottomSheet() {
                  },
 
             ) {
-                Icon(Icons.Default.Add, contentDescription = "add")
+                Icon(
+                    Icons.Default.Add,
+                    contentDescription = "add"
+                )
                 Text(text = "Open Sheet")
             }
         }
@@ -63,7 +66,9 @@ fun ShowBottomSheet() {
 
                 ) {
 
-                    Button(onClick = {
+                    Button(
+
+                        onClick = {
                         scop.launch {
                             sheetState.hide()
                         }.invokeOnCompletion {
@@ -72,7 +77,9 @@ fun ShowBottomSheet() {
                             }
                         }
 
-                    }) {
+                    }
+                    ) {
+                        Text(text = "Hide Sheet")
 
                     }
 
