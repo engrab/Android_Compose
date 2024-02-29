@@ -5,16 +5,16 @@
       <entry key="ChipsExample">
         <State />
       </entry>
+      <entry key="LazyColumnExample">
+        <State />
+      </entry>
+      <entry key="LazyGridColumnExample">
+        <State />
+      </entry>
       <entry key="NavigationDrawerExample">
         <State />
       </entry>
-      <entry key="ShowBottomSheet">
-        <State />
-      </entry>
       <entry key="SnackbarExample">
-        <State />
-      </entry>
-      <entry key="SwitchExample">
         <State />
       </entry>
       <entry key="app">
